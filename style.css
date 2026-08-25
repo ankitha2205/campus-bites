@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/Background2.png);
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    height: 70px;
+}
+.nav-1{
+ display: flex;
+ align-items: center;
+ gap: 40px;
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.logo{
+    color: orange;
+    font-size: 30px;
+}
+.links li{
+    font-size: 18px;
+    color: orange;
+}
+.links a{
+   color: white;
+   text-decoration: none;
+   transition: all 0.5s ease-in;
+}
+.links a:hover{
+   color: orange;
+   transform: translateY(-3px);
+}
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.icons i{
+    font-size: 25px;
+    color: black;
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    padding: 28px 40px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 160px;
+    margin-left: 150px;
+}
+.question{
+    font-size: 30px;
+    font-weight: 300;
+}
+.heading1{
+   font-size: 80px;
+    font-weight: 900;
+}
+.heading2{
+   font-size: 20px;
+   font-weight: 500;
+   color: rgb(224, 100, 17);
+}
+.menu-btn{
+    width: 200px;
+   background: transparent;
+   padding: 10px 20px;
+   border-radius: 35px;
+   font-size: 15px;
+   color: white;
+   border: 1px solid white;
+}
+.menu-btn:hover{
+    color: white;
+    background-color: rgb(224, 100, 17);
+}
+#menu{ 
+    padding: 100px 20px;
+    box-shadow: 0 4px 15px rgba(148, 140, 140, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#menu img {
+    width: 150px;
+    height: 150px;
+}
+
+  #about {
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(148, 140, 140, 0.5);
+}
+
+#about span {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+#about h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: orange;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+#about button {
+    display: block;
+    margin: 30px auto 0;
+}
+#contact{
+    padding: 50px 20px;
+    box-shadow: 0 4px 15px rgba(148, 140, 140, 0.5);
+}
+#contact h1{
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+.form-info{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.submit-btn{
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: orange;
+    font-size: 20px;
+    font-weight: 400;
+}

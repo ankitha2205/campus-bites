@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+       <div class="nav-1">
+      <div class="logo">CollegeResto</div>
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="info">
+          <span class="question">Are You Hungry?</span>
+          <span class="heading1">Dont wait</span>
+          <i class="heading2">Let start to order food now</i>
+          <button class="menu-btn">Check Out Menu</button>
+        </div>
+        <img class="item" src="images/food.png" alt="" />
+      </section>
+
+      <section id="menu">
+        <img src="images/food1.png" alt="" />
+        <img src="images/food2.png" alt="" />
+        <img src="images/food3.png" alt="" />
+        <img src="images/food4.png" alt="" />
+      </section>
+
+      <section id="about">
+          <span>About Us</span>
+          <h2>Good Food, Great Moments</h2>
+
+          <p>
+            Welcome to CollegeResto, your go-to place for delicious, affordable,
+            and freshly prepared food. We bring together great taste, quality
+            ingredients, and a comfortable atmosphere for students, friends, and
+            food lovers.
+          </p>
+
+          <p>
+            Whether you're looking for a quick snack between classes or a tasty
+            meal with friends, CollegeResto is here to satisfy your hunger.
+          </p>
+
+          <button class="menu-btn">Explore Our Menu</button>
+      </section>
+
+      <section id="location"></section>
+
+    <!--Contact Section--> 
+
+      <section id="contact">
+        <h1>Contact Us</h1>
+        <form action="">
+          <div class="form-info">
+              <label for="Name">
+                Name: 
+            </label>
+            <input type="text" required>
+          </div>
+            <div class="form-info">
+              <label for="Email">
+                Email: 
+            </label>
+            <input type="text" required>
+            </div>
+            <div class="form-info">
+              <label for="msg">
+                Message: 
+            </label>
+            <textarea></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
