@@ -5,7 +5,7 @@ const foodItems = [
         price: 100,
         category: "Fast Food",
         available: true,
-        image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+        image: "./images/pizza.png"
     },
 
     {
@@ -14,7 +14,7 @@ const foodItems = [
         price: 70,
         category: "Fast Food",
         available: true,
-        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+        image: "./images/Burger.png"
     },
 
     {
@@ -23,7 +23,7 @@ const foodItems = [
         price: 50,
         category: "Snacks",
         available: false,
-        image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80"
+        image: "./images/FrenchFries.png"
     },
 
     {
@@ -32,7 +32,7 @@ const foodItems = [
     price: 80,
     category: "Meals",
     available: true,
-    image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=90"
+    image: "./images/VegMeals.png"
 },
 
     {
@@ -41,7 +41,7 @@ const foodItems = [
         price: 40,
         category: "Beverages",
         available: true,
-        image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+        image: "./images/ColdCoffee.png"
     },
 
     {
@@ -50,7 +50,7 @@ const foodItems = [
         price: 60,
         category: "Snacks",
         available: true,
-        image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
+        image: "./images/Sandwitch.png"
     }
 ];
 
