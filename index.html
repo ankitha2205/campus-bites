@@ -1,104 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Landing Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bites</title>
+
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="navbar">
-       <div class="nav-1">
-      <div class="logo">CollegeResto</div>
-      <ul class="links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Campus Bites
     </div>
 
-    <div class="icons">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-bars"></i>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
     </div>
-    </header>
 
-    <main>
-      <section id="home">
-        <div class="info">
-          <span class="question">Are You Hungry?</span>
-          <span class="heading1">Dont wait</span>
-          <i class="heading2">Let start to order food now</i>
-          <button class="menu-btn">Check Out Menu</button>
-        </div>
-        <img class="item" src="images/food.png" alt="" />
-      </section>
+</header>
 
-      <section id="menu">
-        <img src="images/food1.png" alt="" />
-        <img src="images/food2.png" alt="" />
-        <img src="images/food3.png" alt="" />
-        <img src="images/food4.png" alt="" />
-      </section>
 
-      <section id="about">
-          <span>About Us</span>
-          <h2>Good Food, Great Moments</h2>
+<main>
 
-          <p>
-            Welcome to CollegeResto, your go-to place for delicious, affordable,
-            and freshly prepared food. We bring together great taste, quality
-            ingredients, and a comfortable atmosphere for students, friends, and
-            food lovers.
-          </p>
+<section id="home" class="hero">
 
-          <p>
-            Whether you're looking for a quick snack between classes or a tasty
-            meal with friends, CollegeResto is here to satisfy your hunger.
-          </p>
+    <div class="hero-content">
 
-          <button class="menu-btn">Explore Our Menu</button>
-      </section>
+        <span>Hungry on Campus?</span>
 
-      <section id="location"></section>
+        <h1>Check Before You Go</h1>
 
-    <!--Contact Section--> 
+        <p>
+            Check food availability, compare prices and calculate
+            your total before walking to the college canteen.
+        </p>
 
-      <section id="contact">
-        <h1>Contact Us</h1>
-        <form action="">
-          <div class="form-info">
-              <label for="Name">
-                Name: 
-            </label>
-            <input type="text" required>
-          </div>
-            <div class="form-info">
-              <label for="Email">
-                Email: 
-            </label>
-            <input type="text" required>
-            </div>
-            <div class="form-info">
-              <label for="msg">
-                Message: 
-            </label>
-            <textarea></textarea>
-            </div>
-            <button class="submit-btn">Submit</button>
-        </form>
-      </section>
-    </main>
+        <button class="primary-btn" id="check-menu">
+            Check Menu
+        </button>
 
-    <script src="script.js"></script>
-  </body>
+    </div>
+
+    <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+        alt="Pizza"
+    >
+
+</section>
+
+
+<section id="menu">
+
+    <div class="section-heading">
+
+        <span>Campus Canteen</span>
+
+        <h2>Find Your Food</h2>
+
+        <p>
+            Check what's available before visiting the canteen.
+        </p>
+
+    </div>
+
+
+    <div class="controls">
+
+        <select id="canteen">
+            <option value="Main Canteen">Main Canteen</option>
+            <option value="Block A Canteen">Block A Canteen</option>
+            <option value="Block B Canteen">Block B Canteen</option>
+        </select>
+
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search food..."
+        >
+
+
+        <select id="category">
+
+            <option value="All">All Categories</option>
+
+            <option value="Fast Food">
+                Fast Food
+            </option>
+
+            <option value="Snacks">
+                Snacks
+            </option>
+
+            <option value="Beverages">
+                Beverages
+            </option>
+
+            <option value="Meals">
+                Meals
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div id="food-container" class="food-container"></div>
+
+</section>
+
+
+<section id="cart-section">
+
+    <div class="section-heading">
+
+        <span>Your Selection</span>
+
+        <h2>My Cart</h2>
+
+    </div>
+
+
+    <div id="cart-container"></div>
+
+
+    <div class="cart-total">
+
+        <h3>
+            Total:
+            ₹<span id="total">0</span>
+        </h3>
+
+        <button id="clear-cart">
+            Clear Cart
+        </button>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+
+    <div class="section-heading">
+
+        <span>About Campus Bites</span>
+
+        <h2>Know Before You Go</h2>
+
+    </div>
+
+
+    <p>
+        Campus Bites helps students check food availability
+        and prices before visiting their college canteen.
+    </p>
+
+    <p>
+        Search for your favourite food, check whether it is
+        available and calculate your estimated total.
+    </p>
+
+</section>
+
+
+<section id="contact">
+
+    <div class="section-heading">
+
+        <h2>Contact Us</h2>
+
+    </div>
+
+
+    <form id="contact-form">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button class="primary-btn">
+            Submit
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
 </html>
